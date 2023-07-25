@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Meu Site</title>
+</head>
+<body background="img/fundo.webp">
+
+  <nav>
+<!--sidenav para mobile menu superior esquerdo somente para mobile ou se diminuir a tela
+*
+*
+*
+-->
+    <ul id="menu" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/fundo.webp">
+        </div>
+        <a href="#"><img class="circle" src="img/ney.png"></a>
+        <a href="#"><span class="white-text name">Daniel e Kaileny</span></a>
+        <a href="#"><span class="white-text email">danieleleoterio99@gmail.com <br> kailenyfernanda2535@gmail.com</span></a>
+      </div></li>
+      <li><a href="#jogo" class="waves-effect">Jogos</a></li>
+      <li><a href="#sobre" class="waves-effect">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><div class="waves-effect"></div></li>
+      <li><a href="#conta">Login</a></li>
+    </ul>
+    <a href="#" data-target="menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+
+<!--Navbar superior para navegar na pagina. Onde vai estar o conteudo para locomoção rapida
+*
+*
+*
+-->
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo left"><img id="logo" src="img/icon.png" width="20%"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#jogo" class="guia">Jogos</a></li>
+        <li><a href="#sobre" class="guia">Sobre</a></li>
+        <li><a href="#contato" class="guia">Contato</a></li>
+        <li><a href="#conta" class="conta"><b>LOGIN</b></a></li>
+
+      </ul> 
+    </div>
+  </nav>
+
+  
+
+<!--Carrossel de imagens em slide para demonstração dos produto em evidência-->
+  <div class="carousel carousel-slider responsive-img">
+    <a class="carousel-item" href="#um"><img id="dan" src="img/1.webp"></a>
+    <a class="carousel-item" href="#dois"><img id="dan" src="img/zika.jpeg"></a>
+    <a class="carousel-item" href="#tres"><img id="dan" src="img/us.jpg"></a>
+    <a class="carousel-item" href="#quatro"><img id="dan" src="img/god.webp"></a>
+    <a class="carousel-item" href="#cinco"><img id="dan" src="img/or.jpg"></a>
+    <a class="carousel-item" href="#seis"><img id="dan" src="img/gosh.jpg"></a>
+    <a class="carousel-item" href="#sete"><img id="dan" src="img/aloy.webp"></a>
+    <a class="carousel-item" href="#oito"><img id="dan" src="img/zelda.jpg"></a>
+    <a class="carousel-item" href="#nove"><img id="dan" src="img/valhalla.jpg"></a>
+    <a class="carousel-item" href="#dez"><img id="dan" src="img/call.webp"></a>
+  </div><br>
+
+<!--Cards Produtos a serem comprados. Em um pequeno slide com poucas imagens-->
+<section id="jogo">
+<h1><center>Jogos</center></h1>
+
+<div class="row">
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/call.webp">
+      </div>
+      <div class="card-content">
+        <p class="card-title">Call Of Duty</p><br>
+        <p> A partida começa mais ou menos da mesma forma, por exemplo. 
+          Os jogadores começam em um avião e precisam saltar para o mapa, uma ilha. No salto, é possível
+           abrir o para-quedas para não morrer.</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/Fortnite1.jpg">
+      </div>
+      <div class="card-content">
+        <p class="card-title">Fortnite</p><br>
+        <p>Battle Royale para até 100 jogadores, 
+          jogando sozinho ou em grupos de dois a quatro amigos. Os jogadores deixam um 
+          "ônibus de batalha" que cruza o mapa do jogo sem nenhuma arma.&nbsp;</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/mortal1.jpg">
+      </div>
+      <div class="card-content">
+        <p class="card-title">Mortal Kombat</p><br>
+        <p>Vença uma série de batalhas emocionantes, 
+          onde cada herói e cada local mostram suas principais características. 
+          Nós nos perguntamos por que os jogadores amam tanto o Mortal Kombat.</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/gta1.jpg">
+      </div>
+      <div class="card-content">
+        <p class="card-title">GTA 5</p><br>
+        <p>O jogo se passa no estado ficcional de San Andreas, com a história seguindo Carl
+           "CJ" Johnson em sua luta para lidar com guerras de gangues, confrontos com 
+           policiais e as relações com sua família e amigos.</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/calboi1.jpg">
+      </div>
+      <div class="card-content">
+        <p class="card-title">Red Dead II</p><br>
+        <p>Um membro da guangue de bandidos de Dutch Van der Linde. Depois de tudo 
+          dar errado durante um roubo em uma cidade do oeste chamada Blackwater, 
+          Arthur Morgan e a gangue Van der Linde são forçados a fugir.</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col l4 m4">
+    <div class="card Large">
+      <div class="card-image">
+        <img src="img/jogos/ghost1.webp">
+      </div>
+      <div class="card-content">
+        <p class="card-title">Ghost</p><br>
+        <p>Durante a primeira invasão Mongol no Japão. Jin terá que dominar 
+          um novo estilo de luta, o caminho do Ghost, para derrotar as forças 
+          mongóis e lutar pela liberdade e independência do Japão.</p>
+      </div>
+      <div class="bt-container">
+        <button type="button" class="bt" onclick="compra();"> Comprar </button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+  <br><br><br>
+</section>
+
+<!--Pequeno slide de qualificação de nossos produtos com uma imagem saltante ao lado usando separação po col-->
+  <div class="row">
+    <div class="col s6">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Os melhores jogos voçê encontra aqui!</h3>
+              <h5 class="light grey-text text-lighten-4">comece a pesquisar.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Com as melhores resoluções</h3>
+              <h5 class="light grey-text text-lighten-4">altissíma qualidade.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>As melhores historias</h3>
+              <h5 class="light grey-text text-lighten-4">muito conteudo.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Não perca seu tempo e começe a jogar</h3>
+              <h5 class="light grey-text text-lighten-4">ta esperando o quê...</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s2 m6">
+      <img id="imagem-1" src="img/personagem.png">
+    </div>
+  </div>
+  <br><br><br>
+
+<!--Paralexa com imagem abaixo de the last of us-->
+  <div class="section teal">
+    <div class="row container">
+      <h2 class="header">The Last Of Us</h2>
+      <p class="grey-text text-darken-3 lighten-3">Este é um de nossos melhores jogos e esta com promoção de 
+        50% de desconto, pois nesta empresa gostamos de trazer novidades com preços acessiveis para toda a nossa 
+        comunidade online. E ainda mais você não precisa sair de sua casa, nós levamos ele até a sua residencia.</p>
+    </div>
+  </div>
+<!--Imagem de exposição de the last of us-->
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/last.jpg" width="100%"></div>
+  </div>
+  <br><br><br>
+
+<!--Sobre quem nos somos o que fazemos e como fazemos-->
+<section id="sobre"></section>
+  <br><br><br><br>
+  <div>
+    <blockquote class=" container white-text">
+      <h4>Quem somos nós, o que fazemos e pra que fazemos</h4>
+    </blockquote>
+    <br><br><br>
+
+    <div class="container">      
+      <div class="row">
+              
+          <div class="col m4 red-text accent-4">
+          <h6><b>Quem somos?</b></h6>
+          <p class="white-text">Somos uma empresa de trabalha na area de vendas de jogos, jogos de todos 
+            os tipos, desde o mais avancado até o mais classico. Visamos e priorizamos por vendas para 
+            pessoa que saibam jogar e até mesmo para aqueles nem mesmo ousaram tocar em um controle.
+          </p>
+        </div>
+
+        <div class="col m4 red-text accent-1">
+          <h6><b>Pra que fazemos</b></h6>
+          <p class="white-text espaco">
+            Fazemos isso porque amamos servir e ajudar ao proximo na mobilidade e na praticidade das
+            coisas. Também percebemos que avia um defit nesta aréa pois sempre que encontravamos um jogo
+            legal em questão era muito caro ou até mesmo muito barato porém, de pouca qualidade. Então 
+            criamos este <b>site</b> afim de estabelecer um preço acessível e de otima qualidade sem 
+            a necessidade de sair de sua casa.
+          </p>
+        </div>
+
+        <div class="col m4 red-text accent-1">
+          <h6><b>O que fazemos?</b></h6>
+          <p class="white-text">Procuramos vender jogos para aquele q gostam de investir seu tempo
+             da maneira possivel, isso mesmo jogando, estamos sempre procurando novidades para
+             você não precisar sair do conforto da sua casa vindo ate nossa loja. Nós preparamos
+             e levamos até você trazendo mais conforto, paz e divertimento a sua casa.
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <br><br>
+
+  <!--Formulario de login do site ficticio para quem queira fazer uma contata conosco-->
+  <section id="conta"></section>
+    <br><br><br>
+    <center>
+      <div class="formulario">
+        <form name="retorno" method="get">
+          <h4 class="for">Acesse sua conta</h4><br>
+          <input id="nome" type="text" placeholder="Digite seu Nome">
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Senha"><br><br>
+          <button type="button" class="waves-effect waves-light btn-large hoverable" onclick="boa();">Acesse sua conta</button>
+        </form>
+      </div>
+    </center>
+
+  <br><br><br><br><br>
+
+<!--Nossos contatos e redes sociais, juntamente com uma linda dedicatoria-->
+  <section id="contato">
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Dedicatoria</h5>
+            <p class="grey-text text-lighten-4">Este projeto foi feito com muita dedicação e carinho até mesmo
+              nos minimos detalhes, desde o começo ao fim. Me desculpe se não consegui-mos alcançar o esperando
+              pelo senhor, porém desde já venho lhe dizer que nos demos nosso melhor segundo as nossas capacidades
+              somos todos programadores em evoluçâo, em prol de um resultado satisfatorio.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Redes Sociais</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/daniel.eleoterio.900" target="_blank">Facebook: Daniel Eleotério</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/daniel.elesilva" target="_blank">Instagram: daniel.elesilva</a></li>
+              <li><a class="grey-text text-lighten-3">Whatsapp: (55) 11 91289-3177</a></li><br>
+              <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/kaileny.fernanda.5" target="_blank">Facebook: Kaileny Fernanda</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/kay.fsantos" target="_blank">Instagram: kay.fsantos</a></li>
+              <li><a class="grey-text text-lighten-3" >Whatsapp: (55) 11 97071-8626</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2022 daniel e Kaileny
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
